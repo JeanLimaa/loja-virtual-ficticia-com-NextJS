@@ -1,5 +1,5 @@
 import { timeStamp } from "console";
-import { GetServerSideProps, GetStaticProps, NextPage } from "next";
+import { GetStaticProps, NextPage } from "next";
 import { ReactNode, useEffect, useState } from "react";
 import { Col, Container, Row } from "reactstrap";
 
