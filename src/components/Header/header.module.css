@@ -1,0 +1,18 @@
+.cartItensMain{
+    position: relative;
+}
+.cartItem{
+    position: absolute;
+    display: flex;
+    background-color: #e00f0f;
+    bottom: 0;
+    right: -18px;
+    width: 1.15rem;
+    padding: 0.2rem;
+    height: 1.1rem;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
