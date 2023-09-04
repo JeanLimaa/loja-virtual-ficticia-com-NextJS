@@ -1,11 +1,9 @@
-// src/components/ProductDetails.tsx
-
 import Image from "next/image";
 import React, {  useState } from "react";
 import { Button, Col, Row } from "reactstrap";
-import { ProductType } from "../services/products";
+import { ProductType } from "../../services/products";
 import SuccessToast from "./SuccessToast";
-import { useCart } from "../hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 
 type ProductDetailsProps = {
@@ -17,13 +15,14 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   const { addProduct } = useCart()  
     
   return (
-    <Row>
+    <Row className="align-items-center">
       <Col lg={6}>
         <Image
           src={product.imageUrl}
           alt={product.name}
-          height={500}
-          width={600}
+          layout="responsive"
+          height={100}
+          width={100}
         />
       </Col>
 

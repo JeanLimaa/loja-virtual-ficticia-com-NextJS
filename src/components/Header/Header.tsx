@@ -9,7 +9,13 @@ import { useCart } from "@/src/hooks/useCart";
 
 const Header = () => {
   const { cart } = useCart()
-  
+  const [distinctElements, setDistinctElements] = useState(0);
+
+  useEffect(()=> {
+    const diffElements = cart.filter((elemento, index, self) =>
+    index === self.findIndex((e) => e.id === elemento.id)).length
+    setDistinctElements(diffElements)
+  }, [cart])
 
   return (
     <Navbar container="md" color="dark" dark>
@@ -23,7 +29,7 @@ const Header = () => {
         <Link href="/cart" className="nav-link">
           <div className={styles.cartItensMain}>
             <FaShoppingCart />
-            <div className={styles.cartItem}>{cart.length}</div>
+            <div className={styles.cartItem}>{distinctElements}</div>
           </div>
         </Link>
       </Nav>

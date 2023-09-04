@@ -1,5 +1,5 @@
 import { Card, CardBody } from "reactstrap";
-import { useCart } from "../hooks/useCart";
+import { useCart } from "../../hooks/useCart";
 
 const CartTotal = () => {
   const { cart } = useCart()

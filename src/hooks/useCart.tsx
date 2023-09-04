@@ -23,20 +23,10 @@ export const CartContextProvider = (props: {
     }, [])
   
     const addProduct = (product: ProductType) => {
-      const updatedCart = [...cart, product]
-      localStorage.setItem('shopping-cart', JSON.stringify(updatedCart))
-      setCart(updatedCart)
-     // if (productIndex !== -1) {
-      //   const updatedCart = [...cart];
-      //   updatedCart[productIndex].quantity += 1;
-      //   localStorage.setItem('shopping-cart', JSON.stringify(updatedCart));
-      //   setCart(updatedCart);
-      // } else {
-      //   const updatedProduct = { ...product, quantity: 1 };
-      //   const updatedCart = [...cart, updatedProduct];
-      //   localStorage.setItem('shopping-cart', JSON.stringify(updatedCart));
-      //   setCart(updatedCart);
-      // }
+       const updatedCart = [...cart, product]
+       localStorage.setItem('shopping-cart', JSON.stringify(updatedCart))
+       setCart(updatedCart)
+      
     }
   
     const removeProduct = (productId: number) => {

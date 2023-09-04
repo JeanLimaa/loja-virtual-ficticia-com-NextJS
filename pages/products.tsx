@@ -1,5 +1,5 @@
 import Header from "@/src/components/Header/Header";
-import ProductsList from "@/src/components/ProductsList";
+import ProductsList from "@/src/components/Products/ProductsList";
 import { ProductType, fetchProducts } from "@/src/services/products";
 import { GetStaticProps, NextPage } from "next";
 import Head from "next/head";

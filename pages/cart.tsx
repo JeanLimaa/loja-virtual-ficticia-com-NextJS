@@ -2,8 +2,8 @@ import { NextPage } from "next"
 import Head from "next/head"
 import { Container } from "reactstrap"
 import Header from "../src/components/Header/Header"
-import CartTable from "@/src/components/CartTable"
-import CartTotal from "@/src/components/CartTotal"
+import CartTable from "@/src/components/Cart/CartTable"
+import CartTotal from "@/src/components/Cart/CartTotal"
 
 const Cart: NextPage = () => {
   return (
