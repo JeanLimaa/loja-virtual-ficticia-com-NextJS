@@ -1,5 +1,5 @@
 import Header from "@/src/components/Header/Header";
-import ProductDetails from "@/src/components/Products/ProductDetails";
+import ProductDetails from "../../src/components/Products/ProductDetails";
 import { ProductType, fetchProduct, fetchProducts } from "@/src/services/products";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Head from "next/head";
